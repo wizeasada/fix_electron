@@ -1,0 +1,74 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "http://.",
+  "main": "build/electron/main.js",
+  "author": "wize",
+  "description": "client",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test:electron": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "electron-builder install-app-deps",
+    "start-dev": "concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && tsc -p electron -w\" \"wait-on http://localhost:3000 && tsc -p electron && electron .\"",
+    "build-app": "npm run build && tsc -p electron && electron-builder",
+    "watch": "npm run clean && tsc -w",
+    "test": "jest",
+    "test-ci": "jest --ci"
+  },
+  "build": {
+    "extends": null,
+    "files": [
+      "build/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "5.11.9",
+    "@testing-library/react": "11.2.5",
+    "@testing-library/user-event": "12.7.0",
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.1",
+    "@types/react-redux": "7.1.16",
+    "@types/redux": "3.6.0",
+    "electron-is-dev": "1.2.0",
+    "electron-reload": "1.5.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-router-scroll-memory": "2.0.7",
+    "react-scripts": "4.0.2",
+    "typescript": "4.1.5",
+    "web-vitals": "1.1.0"
+  },
+  "devDependencies": {
+    "@types/electron-devtools-installer": "2.2.0",
+    "concurrently": "5.3.0",
+    "electron": "11.2.3",
+    "electron-builder": "22.9.1",
+    "electron-devtools-installer": "3.1.1",
+    "wait-on": "5.2.1"
+  },
+  "license": "ISC"
+}

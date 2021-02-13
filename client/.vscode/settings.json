@@ -1,0 +1,23 @@
+{
+  "editor.tabSize": 2,
+  "eslint.nodePath": "./node_modules/eslint/bin/eslint.js",
+  // "source.fixAll.eslint" で効くようにしたので、コメントアウト
+  // "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/client/src",
+  },
+  // javascriptとjsonはeslintの設定が効かなかったので、prettierのデフォルトを利用する
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.tsserver.pluginPaths": ["typescript-plugin-css-modules"]
+}
