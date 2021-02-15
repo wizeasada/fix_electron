@@ -8,8 +8,15 @@ import React from 'react';
 const AppRouter: React.FC = () => {
   return (
     <div>
-      <p>test{/* <InputboxBox label="input" onChangeText={} /> */}</p>
-      <p>{/* <InputboxBox label="input" onChangeText={} /> */}</p>
+      <div>
+        タイトル <input type="text" name="title" />
+      </div>
+      <div>
+        URL <input type="text" name="url" />
+      </div>
+      <div>
+        <button>保存</button>
+      </div>
     </div>
   );
 };
