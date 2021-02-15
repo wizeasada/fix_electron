@@ -1,12 +1,14 @@
 //TODO: AppRouterを正しい位置に変更
 import React from 'react';
-//import { addFnc } from '@core/shared';
+//import { pullFunc } from 'shared/test';
+
+//const pull = pullFunc;
+//pull(2, 1);
 
 const AppRouter: React.FC = () => {
-  //addFnc(1, 2);
   return (
     <div>
-      <p>aaaa{/* <InputboxBox label="input" onChangeText={} /> */}</p>
+      <p>test{/* <InputboxBox label="input" onChangeText={} /> */}</p>
       <p>{/* <InputboxBox label="input" onChangeText={} /> */}</p>
     </div>
   );
