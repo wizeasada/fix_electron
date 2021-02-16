@@ -81,31 +81,3 @@ const AppRouter: React.FC = () => {
 };
 
 export default AppRouter;
-{
-  /* <div className="relative p-6 flex-auto">
-<div className="mb-3 pt-0 p-6">
-  <input
-    type="text"
-    placeholder="タイトル"
-    className="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full"
-  />
-</div>
-<div className="mb-3 pt-0 p-6">
-  <input
-    type="text"
-    placeholder="URL"
-    className="px-2 py-1 placeholder-gray-400 text-gray-700 relative bg-white rounded text-sm border border-gray-400 outline-none focus:outline-none focus:shadow-outline w-full"
-  />
-</div>
-</div>
-<div className="flex items-center justify-end p-3">
-<div>
-  <button
-    className="py-2 px-5 text-white font-semibold bg-purple-500 hover:bg-purple-800 rounded-lg shadow-md"
-    onClick={() => setShowModal(false)}
-  >
-    保存
-  </button>
-</div>
-</div> */
-}
