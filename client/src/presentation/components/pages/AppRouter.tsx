@@ -15,7 +15,7 @@ const AppRouter: React.FC = () => {
           onClick={() => setShowModal(true)}
         >
           {' '}
-          onClick
+          Click
         </button>
       </div>
       {showModal ? (
