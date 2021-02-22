@@ -1,7 +1,7 @@
 import { app, BrowserWindow } from 'electron';
 import * as path from 'path';
 import * as isDev from 'electron-is-dev';
-import installExtension, { REACT_DEVELOPER_TOOLS } from "electron-devtools-installer";
+import installExtension, { REACT_DEVELOPER_TOOLS } from 'electron-devtools-installer';
 
 let win: BrowserWindow | null = null;
 
@@ -10,27 +10,32 @@ function createWindow() {
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true
-    }
-  })
+      nodeIntegration: true,
+    },
+  });
 
   if (isDev) {
     win.loadURL('http://localhost:3000/index.html');
   } else {
     win.loadURL(`file://${__dirname}/../index.html`);
   }
-  win.on('closed', () => win = null);
+  win.on('closed', () => (win = null));
   if (isDev) {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
     require('electron-reload')(__dirname, {
       electron: path.join(__dirname, '..', '..', 'node_modules', '.bin', 'electron'),
       forceHardReset: true,
-      hardResetMethod: 'exit'
+      hardResetMethod: 'exit',
     });
   }
 
   installExtension(REACT_DEVELOPER_TOOLS)
-    .then((name) => console.log(`Added Extension:  ${name}`))
-    .catch((err) => console.log('An error occurred: ', err));
+    .then((name) => {
+      name;
+    })
+    .catch((err) => {
+      err;
+    });
 
   //開発ツール表示
   // if (isDev) {

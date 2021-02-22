@@ -1,5 +1,5 @@
 import React from 'react';
-import AppRouter from './presentation/components/pages/AppRouter';
+import AppRouter from './presentation/routers/AppRouter';
 import './tailwind.output.css';
 
 //const store = configureStore({});

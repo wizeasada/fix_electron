@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 //const pull = pullFunc;
 //pull(2, 1);
 
-const AppRouter: React.FC = () => {
+const Modal: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
@@ -80,4 +80,4 @@ const AppRouter: React.FC = () => {
   );
 };
 
-export default AppRouter;
+export default Modal;
