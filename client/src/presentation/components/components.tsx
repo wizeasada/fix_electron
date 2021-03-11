@@ -1,10 +1,12 @@
 import React from 'react';
-import Modal from '../components/organisms/modal';
+import HeaderWrap from './organisms/headerWrap';
+import BodyWrap from './organisms/bodyWrap';
 
 const Components: React.FC = () => {
   return (
-    <div>
-      <Modal />
+    <div className="h-screen">
+      <HeaderWrap />
+      <BodyWrap />
     </div>
   );
 };

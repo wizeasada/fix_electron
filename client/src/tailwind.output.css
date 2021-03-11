@@ -31131,6 +31131,14 @@ code {
     monospace;
 }
 
+.h-header{
+  height:7%
+}
+
+.h-body{
+  height:93%
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
