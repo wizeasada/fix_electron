@@ -1,9 +1,0 @@
-{
-  "name": "link_manage_app",
-  "version": "1.0.0",
-  "workspaces": [
-    "client",
-    "server",
-    "shared"
-  ]
-}
