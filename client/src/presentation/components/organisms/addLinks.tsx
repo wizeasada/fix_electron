@@ -8,7 +8,7 @@ const AddLinks: React.FC = () => {
   return (
     <div className="">
       <span className="block text-gray-700 text-left px-2 py-2">
-        <FontAwesomeIcon style={openLinkIcon} icon={faPlusSquare} /> Pjaaa
+        <FontAwesomeIcon style={openLinkIcon} icon={faPlusSquare} /> Pj
         <span className="block text-gray-700 text-left px-2 py-2">
           <FontAwesomeIcon style={closeLinkIcon} icon={faMinusSquare} /> Parent
           <span className="block text-gray-700 text-left px-2 py-2">
