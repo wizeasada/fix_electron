@@ -4,7 +4,7 @@ import BodyWrap from './organisms/bodyWrap';
 
 const Components: React.FC = () => {
   return (
-    <div className="h-screen">
+    <div className="h-screen font-sans">
       <HeaderWrap />
       <BodyWrap />
     </div>
