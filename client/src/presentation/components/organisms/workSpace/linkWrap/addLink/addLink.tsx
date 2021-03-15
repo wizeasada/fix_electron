@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
+import { faPlusIcon } from '../../../../../helper/fontAwesome';
 
-const Modal: React.FC = () => {
+const AddLink: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-      <div className="m-5">
-        <button
-          className="justify-center py-2 px-5 text-white font-semibold bg-purple-500 hover:bg-purple-800 rounded-lg shadow-md"
-          type="button"
-          onClick={() => setShowModal(true)}
-        >
-          {' '}
-          Click
-        </button>
+      <div className="absolute bottom-5 right-5 cursor-pointer" onClick={() => setShowModal(true)}>
+        {faPlusIcon}
       </div>
       {showModal ? (
         <>
@@ -25,9 +19,11 @@ const Modal: React.FC = () => {
                       <div className="m-20">
                         <form action="" className="">
                           <div className="mb-6">
-                            <label htmlFor="title" className="block mb-2 text-sm text-gray-600 dark:text-gray-400 ">
-                              タイトル
-                            </label>
+                            <div className="flex justify-between mb-2">
+                              <label htmlFor="url" className="text-sm text-gray-600 dark:text-gray-400">
+                                タイトル
+                              </label>
+                            </div>
                             <input
                               type="text"
                               name="title"
@@ -53,7 +49,7 @@ const Modal: React.FC = () => {
                           <div className="mb-2">
                             <button
                               type="button"
-                              className="bg-blue-500 text-white hover:bg-blue-800 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mt-3 mb-8 float-right"
+                              className="text-white bg-gray-500 hover:bg-gray-800 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mt-3 mb-8 float-right"
                               onClick={() => {
                                 setShowModal(false);
                               }}
@@ -75,5 +71,4 @@ const Modal: React.FC = () => {
     </>
   );
 };
-
-export default Modal;
+export default AddLink;
