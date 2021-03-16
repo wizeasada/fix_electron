@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { faPlusIcon } from '../../../../../helper/fontAwesome';
+import { faPlusIcon } from '../../../../helper/fontAwesome';
 
 const AddLink: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <>
-      <div className="absolute bottom-5 right-5 cursor-pointer" onClick={() => setShowModal(true)}>
+      <div className="fixed bottom-10 cursor-pointer " onClick={() => setShowModal(true)}>
         {faPlusIcon}
       </div>
       {showModal ? (

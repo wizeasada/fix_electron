@@ -1,5 +1,5 @@
 import React from 'react';
-import AddLink from './workSpace/linkWrap/addLink/addLink';
+import AddLink from './workSpace/addLink/addLink';
 import LinkWrap from './workSpace/linkWrap/linkWrap';
 
 //TODO:ここでthreeAggElementsBlocksの配列[0]-[2]の3つを返す様にするか
