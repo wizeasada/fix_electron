@@ -23,6 +23,7 @@ const LinkWrap: React.FC = () => {
                 {v.elements.map((vv, i) => (
                   <div className="block text-gray-700 text-left px-6 py-1" key={i}>
                     {secondLayer ? (
+                      //TODO:コンポーネントを再帰
                       //2階層目:展開後
                       <>
                         <div className="cursor-pointer" onClick={() => setSecondLayer(false)}>
