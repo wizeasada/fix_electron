@@ -22,6 +22,7 @@ const AddLink: React.FC = () => {
                             <div className="flex justify-between mb-2">
                               <label htmlFor="url" className="text-sm text-gray-600 dark:text-gray-400">
                                 タイトル
+                                たいとる１
                               </label>
                             </div>
                             <input
