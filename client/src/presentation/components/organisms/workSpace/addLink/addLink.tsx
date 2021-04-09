@@ -25,7 +25,6 @@ const AddLink: React.FC = () => {
                                 たいとる１
                                 タイトル２
                                 タイトル３
-
                               </label>
                             </div>
                             <input
