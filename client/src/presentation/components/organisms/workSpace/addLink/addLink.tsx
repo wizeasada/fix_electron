@@ -23,6 +23,7 @@ const AddLink: React.FC = () => {
                               <label htmlFor="url" className="text-sm text-gray-600 dark:text-gray-400">
                                 タイトル
                                 たいとる１
+                                タイトル２
                               </label>
                             </div>
                             <input
